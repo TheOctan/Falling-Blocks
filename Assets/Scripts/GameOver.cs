@@ -11,6 +11,11 @@ public class GameOver : MonoBehaviour
 
     private bool gameOver = false;
 
+    private void Start()
+    {
+        FindObjectOfType<PlayerController>().onPlayerDeath += OnGameOver;
+    }
+
     void Update()
     {
         if (gameOver)
@@ -25,7 +30,7 @@ public class GameOver : MonoBehaviour
     void OnGameOver()
     {
         gameOverScreen.SetActive(true);
-        secondsSurvivedUI.text = Time.timeSinceLevelLoad.ToString();
+        secondsSurvivedUI.text = Mathf.RoundToInt(Time.timeSinceLevelLoad).ToString();
         gameOver = true;
     }
 }

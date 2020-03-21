@@ -531,8 +531,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallingBlockPrefab: {fileID: 6647991669262406344, guid: 821a95aa9bbe2cf4a8f3c612a8178b53,
     type: 3}
-  secondsBetweenSpawnsMinMax: {x: 0.3, y: 1}
-  spawnSizeMinMax: {x: 0.3, y: 2.3}
+  secondsBetweenSpawnsMinMax: {x: 0.3, y: 0.6}
+  spawnSizeMinMax: {x: 0.5, y: 2.3}
   spawnAngleMax: 15
 --- !u!4 &1151791053
 Transform:
@@ -816,7 +816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.1764706}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.3529412}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -854,7 +854,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1759468379
 RectTransform:
   m_ObjectHideFlags: 0
