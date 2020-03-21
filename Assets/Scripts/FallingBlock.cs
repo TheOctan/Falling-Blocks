@@ -24,7 +24,5 @@ public class FallingBlock : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        
     }
 }
