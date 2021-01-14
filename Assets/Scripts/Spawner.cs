@@ -28,11 +28,10 @@ public class Spawner : MonoBehaviour
 
 			float spawnAngle = Random.Range(-spawnAngleMax, spawnAngleMax);
 			float spawSize = Random.Range(spawnSizeMinMax.x, spawnSizeMinMax.y);
+			
 			Vector2 spawnPosition = new Vector2(Random.Range(-screenhalfSizeWorldunits.x, screenhalfSizeWorldunits.x), screenhalfSizeWorldunits.y + spawSize / 2f);
 			GameObject newBlock = Instantiate(fallingBlockPrefab, spawnPosition, Quaternion.Euler(Vector3.forward * spawnAngle));
-			newBlock.transform.localScale = Vector3.one * spawSize;
-
-			
+			newBlock.transform.localScale = Vector3.one * spawSize;			
 		}
 	}
 }
